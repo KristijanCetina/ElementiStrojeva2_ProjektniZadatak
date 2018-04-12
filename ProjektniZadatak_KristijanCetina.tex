@@ -6,6 +6,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[section]{placeins}
 \usepackage{graphicx}
+\usepackage{float}
 \bibliographystyle{ieeetr}%ieeetr, abbrv
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
@@ -111,7 +112,7 @@ Dimenzija $d_2$ je zbog standardnih dimenzija ležajeva usvojena $\mathbf{d_2=40
 \subsubsection*{Žlijeb za izlaz alata}
 Prema normi DIN 509 prema $d_2$ usvojene su dimenzija za izlaz alata\\
 $\rho_1=0,6mm$, $t_1=0,3mm$. Na slici \ref{izlazAlata} prikazan je žlijeb za izlaz alata.
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{izlazAlata}
 \caption{Skica žlijeba za izlaz alata}\label{izlazAlata}
@@ -182,7 +183,15 @@ L_{10h}&=\left(\frac{32500}{2736,1} \cdot 1 \right)^3 \cdot \frac{10^6}{60 \cdot
 L_{10h}&=\mathbf{34915 h}
 \end{align*}
 
+\newpage
+
 \subsection{Proračun momenata savijanja i naprezanja}
+U nastavku su dani proračuni momenata savijanja i naprezanja za svaki kritični presjek nazanačen na slici \ref{KriticniPresjeci}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{KriticniPresjeci}
+\caption{Prikaz kritičnih presjeka na vratilu}\label{KriticniPresjeci}
+\end{figure}
 \begin{align*}
 M_{S1}=F_A \cdot \frac{B}{2}=2736,1 \cdot \frac{18}{2}&=24624,9Nmm\\
 M_{S2}=F_A \cdot \left(a- \frac{b_z}{2}\right)=2736,1 \cdot \left(80- \frac{115}{2}\right)&=61562,3Nmm\\
