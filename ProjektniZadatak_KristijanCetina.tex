@@ -7,6 +7,7 @@
 \usepackage[section]{placeins}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage[final]{pdfpages}
 \bibliographystyle{ieeetr}%ieeetr, abbrv
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
@@ -387,7 +388,8 @@ Vidljivo je kako dopušteno naprezanje iznosi više od torzijskog naprezanja koj
 %\appendix
 %\section{Radionički nacrt vratila}
 \addcontentsline{toc}{section}{Dodatak A: Radionički nacrt sklopa}
-{\Large \textbf{Dodatak A: Radionički nacrt sklopa}}
+%{\Large \textbf{Dodatak A: Radionički nacrt sklopa}}
+\includepdf[fitpaper]{StrojniSklopNacrt.pdf}
 %\input{filename} (da nastavi pisati kako da je copy/paste) ili
 %\include{filename} (da ubaci na novu stranicu. Ok za nova poglavlja i sl)
 \end{document}
